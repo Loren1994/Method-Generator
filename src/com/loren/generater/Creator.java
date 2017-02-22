@@ -83,10 +83,8 @@ public class Creator extends WriteCommandAction.Simple {
 //        JavaCodeStyleManager styleManager = JavaCodeStyleManager.getInstance(project);
 //        styleManager.optimizeImports(file);
 //        styleManager.shortenClassReferences(targetClass);
-        } catch (NullPointerException e1) {
+        } catch (NullPointerException | ArrayIndexOutOfBoundsException e1) {
             e1.printStackTrace();
-        } catch (ArrayIndexOutOfBoundsException e2) {
-            e2.printStackTrace();
         }
     }
 
